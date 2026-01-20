@@ -1,0 +1,13 @@
+# My custom `.blerc` settings of https://github.com/akinomyoga/ble.sh
+source <(ble-face | grep filename | sed -E 's/,?underline//g')
+ble-face -s auto_complete fg=240
+bleopt exec_elapsed_mark=
+bleopt exec_exit_mark=
+bleopt exec_errexit_mark=
+bleopt prompt_eol_mark=''
+ble-face region_insert='fg=32'
+bleopt accept_line_threshold=-1
+ble-bind -f 'RET' accept-line
+ble-bind -f 'C-m' accept-line
+bind 'set enable-bracketed-paste off'
+alias clear='/usr/bin/clear'
